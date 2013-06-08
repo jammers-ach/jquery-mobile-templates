@@ -17,7 +17,7 @@ templates are loaded into the template store when the first page is loaded. They
 
 ```
 <div id="template-files">
-	<a id="employee_template"  type="text/template" href="templates/employee.html"></a>
+	<a id="employee_template"  href="templates/employee.html"></a>
 </div>
 ```
 
