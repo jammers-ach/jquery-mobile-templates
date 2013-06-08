@@ -1,0 +1,17 @@
+<div data-role="page" data-add-back-btn="true" class="flashcard_card" id="flashcard-{{value}}" data-fullscreen="true">
+
+	<div data-role="header">
+		<h1>{{firstName}} {{lastName}}</h1>
+	</div>
+
+	<div  data-role="content">	
+		<p> Role: {{role}}</p>
+		<h3>Hobbies</h3>
+		<ul>
+			{{#hobbies}}
+			<li>{{.}}</li>
+			{{/hobbies}}
+		</ul>
+	</div>
+
+</div>

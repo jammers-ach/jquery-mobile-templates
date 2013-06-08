@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+
+<html> 
+
+<head> 
+	<title>Form Page</title> 
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<meta charset="utf-8" />
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+
+	<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+
+	<link rel="stylesheet" href="css/jquery.mobile.css" />
+	<link rel="stylesheet" href="css/word_counters.css" />
+	
+	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+	<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+	<script type="text/javascript" src="js/mustache.js"></script>
+	<script type="text/javascript" src="js/jquery.mobile.templates.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
+	
+	<script>
+	
+	$.templates.addObjectToStore('employees','john',{ "firstName":"John" , "lastName":"Doe",'role':'manager','hobbies':['ice-skating','salsa']}); 
+	$.templates.addObjectToStore('employees','bill',{ "firstName":"Bill" , "lastName":"Smith",'role':'programmer','hobbies':['working','music','games']}); 
+	$.templates.addObjectToStore('employees','mary',{ "firstName":"Mary" , "lastName":"Carpenter",'role':'programmer','hobbies':['fishing','xbox']}); 
+	$.templates.addObjectToStore('employees','sue', { "firstName":"Susan" , "lastName":"Farse",'role':'designer','hobbies':['Roller blading','politics']}); 
+	
+	
+	
+	</script>
+
+</head>
+
+
+<body>
+
+<div id="template-files">
+	<a id="employee_template"  type="text/template" href="templates/employee.html"></a>
+</div>
+
+
+
+<div data-role="page" id="page1">
+    <div data-theme="a" data-role="header">
+        <h3>
+            Employees
+        </h3>
+    </div>
+    <div data-role="content">
+    
+		<ul data-role="listview" data-divider-theme="b" data-inset="true">
+            <li data-theme="c">
+                <a href="#tmpl-employee_template?obj=employees&key=john" data-transition="slide"  data-prefetch>
+                    John's profile
+                </a>
+            </li>
+            <li data-theme="c">
+                <a href="#tmpl-employee_template?obj=employees&key=mary" data-transition="slide"  data-prefetch>
+                    Mary's profile
+                </a>
+            </li>
+            <li data-theme="c">
+                <a href="#tmpl-employee_template?obj=employees&key=bill" data-transition="slide"  data-prefetch>
+                    Bill's profile
+                </a>
+            </li>
+            <li data-theme="c">
+                <a href="#tmpl-employee_template?obj=employees&key=sue" data-transition="slide"  data-prefetch>
+                    Sue's profile
+                </a>
+            </li>
+
+        </ul>
+    </div>
+</div>
+
+
+
+</body>
+
+</html>
