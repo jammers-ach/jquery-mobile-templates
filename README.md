@@ -13,11 +13,11 @@ There is an object store and a template store
 
 templates are loaded into the template store when the first page is loaded. They are held in external files and use {{ mustache }} markup (http://mustache.github.io/)
 
-<code>
+```
 <div id="template-files">
 	<a id="employee_template"  type="text/template" href="templates/employee.html"></a>
 </div>
-</code>
+```
 
 Objects are put into the object store as and when needed (either by ajax calls, or programatically)
 
@@ -27,9 +27,9 @@ e.g. you put all your employees under  object type 'employee' and index them wit
 
 you're links on your page look like this:
 
-<code>
+```
 #tmpl-<i>template_name</i>?obj=<i>object_type</i>&key=<i>key</i>
-</code>
+```
 
 jquery-mobile-templates then automatically generates pages for these objects when the link is clicked.
 
