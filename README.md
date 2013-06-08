@@ -36,7 +36,7 @@ you're links on your page look like this:
 
 jquery-mobile-templates then automatically generates pages for these objects when the link is clicked.
 
-Useage
+Usage
 ------
 
 I'll write some better documentation when I've finished my current project, or someonelse is welcome to do it.
