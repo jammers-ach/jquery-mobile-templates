@@ -41,3 +41,5 @@ For now, just look at the demo.
 
 Only tested on Chrome!
 
+Released under MIT licence: http://www.tldrlegal.com/license/mit-license
+
